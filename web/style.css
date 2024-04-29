@@ -1,0 +1,75 @@
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        height: 10vh;    
+        color: black;
+        background-color: #D9D9D9;
+    }
+
+    main {
+        height: 90vh;
+        width: 100%;
+        background-color: #312738;
+        color: white;
+    }
+
+    #map {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .map-row {
+        display: flex;
+    }
+
+    .lot {
+        display:  flex;
+        align-items: center;
+        justify-content: center ;
+        width: 140px;
+        height: 200px;
+
+        border: 1px solid yellow;
+        border-bottom: none;
+    }
+
+    .lot.lot-0 {
+        width: 140px;
+        height: 100px;
+        border: none;
+        border-bottom: 1px solid yellow;
+    }
+
+    .lot.lot-0:last-child {
+        border-right: 1px solid yellow;
+    }
+
+
+    .entrance-section {
+        border: 1px solid yellow;
+        width: 100px;
+        height: 100px;
+
+        border-left: 0;
+        border-right: 0;
+    }
+
+    h4 {
+        padding: 0  ;
+    }
+
+    .light {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: green ;
+    }
+
+    .light.light-red {
+        background-color: red;
+    }
