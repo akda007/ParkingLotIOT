@@ -84,12 +84,13 @@ void setup()
 void loop()
 {
   server.handleClient();
+
   delay(2);
 
   Serial.printf("\rS1: %6d S2: %6d S3: %6d", analogRead(sensors[0]), analogRead(sensors[1]), analogRead(sensors[2]));
   for (int i = 0; i < size; i++)
   {
-    if (analogRead(sensors[i]) > 100)
+    if (analogRead(sensors[i]) > 80)
     {
       states[i] = 1;
       digitalWrite(ledsg[i], HIGH);
